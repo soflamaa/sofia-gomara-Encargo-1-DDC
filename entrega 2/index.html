@@ -7,29 +7,33 @@
 
   <title>Sofía Gomara · Versión 2</title>
 
-  <link rel="stylesheet" href="style.css?v=50">
+  <link rel="stylesheet" href="style.css?v=100">
 </head>
 
 <body>
 
+  <!-- HEADER -->
+
   <header class="topbar">
 
-    <a class="logo" href="index.html">SG</a>
+    <a href="index.html" class="logo">SG</a>
 
-    <details class="menu">
-      <summary>MENÚ ☰</summary>
+    <button class="menu-toggle" id="menuToggle">
+      MENÚ ☰
+    </button>
 
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="#intereses">Intereses</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="proyecto-1.html">Proyecto 1</a>
-        <a href="proyecto-2.html">Proyecto 2</a>
-        <a href="proyecto-3.html">Proyecto 3</a>
-        <a href="proyecto-4.html">Proyecto 4</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </details>
+    <nav class="menu-panel" id="menuPanel">
+
+      <a href="index.html">Inicio</a>
+      <a href="#intereses">Intereses</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="proyecto-1.html">Proyecto 1</a>
+      <a href="proyecto-2.html">Proyecto 2</a>
+      <a href="proyecto-3.html">Proyecto 3</a>
+      <a href="proyecto-4.html">Proyecto 4</a>
+      <a href="#contacto">Contacto</a>
+
+    </nav>
 
   </header>
 
@@ -42,7 +46,9 @@
 
       <div class="hero-texto">
 
-        <p class="etiqueta">● DISEÑADORA</p>
+        <p class="etiqueta">
+          ● DISEÑADORA
+        </p>
 
         <h1>
           Sofía<br>
@@ -55,13 +61,14 @@
           y proyectos desarrollados a partir de la experimentación con código.
         </p>
 
-        <a class="boton" href="#proyectos">
+        <a href="#proyectos" class="boton">
           Ver proyectos ↓
         </a>
 
       </div>
 
-      <div class="forma"></div>
+
+      <div class="forma-morada"></div>
 
     </section>
 
@@ -71,25 +78,34 @@
     <section class="seccion" id="intereses">
 
       <div class="titulo-seccion">
+
         <h2>Intereses</h2>
-        <span>01 — Personal</span>
+
+        <span>
+          01 — Personal
+        </span>
+
       </div>
+
 
       <div class="intereses-grid">
 
         <article>
+
           <span>01</span>
 
           <h3>Diseño visual</h3>
 
           <p>
-            Me interesa experimentar con composición, color, tipografía
-            y diferentes formas de construir una identidad visual.
+            Me interesa experimentar con composición, color, tipografía y
+            distintas formas de construir una identidad visual.
           </p>
+
         </article>
 
 
         <article>
+
           <span>02</span>
 
           <h3>Interacción</h3>
@@ -98,18 +114,21 @@
             Me interesa observar cómo las personas se relacionan con una
             interfaz y cómo sus acciones pueden modificar una experiencia.
           </p>
+
         </article>
 
 
         <article>
+
           <span>03</span>
 
           <h3>Código creativo</h3>
 
           <p>
-            Utilizar el código como una herramienta para generar movimiento,
+            Utilizo el código como una herramienta para generar movimiento,
             repetición, variación y nuevos comportamientos visuales.
           </p>
+
         </article>
 
       </div>
@@ -122,14 +141,20 @@
     <section class="seccion" id="proyectos">
 
       <div class="titulo-seccion">
+
         <h2>Proyectos</h2>
-        <span>02 — Selección</span>
+
+        <span>
+          02 — Selección
+        </span>
+
       </div>
 
-      <p class="introduccion-seccion">
-        Selección de cuatro ejercicios realizados en p5.js. Cada proyecto
-        cuenta con una página propia, una breve descripción y un acceso al
-        sketch original.
+
+      <p class="introduccion">
+        Selección de cuatro ejercicios desarrollados en p5.js. Cada uno cuenta
+        con una página propia donde se puede conocer brevemente la propuesta y
+        acceder al sketch original.
       </p>
 
 
@@ -137,68 +162,69 @@
 
         <a href="proyecto-1.html" class="proyecto-card">
 
-          <span class="proyecto-numero">01</span>
+          <span>01</span>
 
           <div>
-            <h3>Proyecto 1</h3>
+            <h3>Júpiter cooperativo</h3>
 
             <p>
-              Primera exploración desarrollada mediante programación creativa.
+              Exploración visual que relaciona movimiento, ondas y formas
+              orgánicas.
             </p>
           </div>
 
-          <strong>Ver proyecto ↗️</strong>
+          <strong>Ver proyecto ↗</strong>
 
         </a>
 
 
         <a href="proyecto-2.html" class="proyecto-card">
 
-          <span class="proyecto-numero">02</span>
+          <span>02</span>
 
           <div>
-            <h3>Proyecto 2</h3>
+            <h3>Proyecto 02</h3>
 
             <p>
-              Experimentación gráfica a partir de relaciones entre forma y código.
+              Experimentación gráfica realizada mediante programación creativa.
             </p>
           </div>
 
-          <strong>Ver proyecto ↗️</strong>
+          <strong>Ver proyecto ↗</strong>
 
         </a>
 
 
         <a href="proyecto-3.html" class="proyecto-card">
 
-          <span class="proyecto-numero">03</span>
+          <span>03</span>
 
           <div>
-            <h3>Proyecto 3</h3>
+            <h3>Proyecto 03</h3>
 
             <p>
-              Exploración de movimiento, composición y transformación visual.
+              Exploración de movimiento, repetición y composición digital.
             </p>
           </div>
 
-          <strong>Ver proyecto ↗️</strong>
+          <strong>Ver proyecto ↗</strong>
 
         </a>
 
 
         <a href="proyecto-4.html" class="proyecto-card">
 
-          <span class="proyecto-numero">04</span>
+          <span>04</span>
 
           <div>
-            <h3>Proyecto 4</h3>
+            <h3>Proyecto 04</h3>
 
             <p>
-              Ejercicio que incorpora interacción y comportamiento mediante p5.js.
+              Ejercicio interactivo desarrollado mediante p5.js.
             </p>
           </div>
 
-          <strong>Ver proyecto ↗️</strong>
+          <strong>Ver proyecto ↗</strong>
 
         </a>
 
@@ -212,24 +238,28 @@
     <section class="seccion contacto" id="contacto">
 
       <div class="titulo-seccion">
+
         <h2>Contacto</h2>
-        <span>03 — Hablemos</span>
+
+        <span>
+          03 — Hablemos
+        </span>
+
       </div>
+
 
       <div class="contacto-contenido">
 
         <p>
-          Para conocer más sobre mi proceso y trabajos desarrollados durante
-          la carrera puedes visitar mi Wiki Casiopea.
+          Para conocer más sobre mi proceso y otros trabajos desarrollados
+          durante la carrera puedes visitar mi Wiki Casiopea.
         </p>
 
-        <div class="contacto-links">
-
-          <a href="https://wiki.ead.pucv.cl/" target="_blank">
-            Wiki Casiopea ↗️
-          </a>
-
-        </div>
+        <a
+          href="https://wiki.ead.pucv.cl/"
+          target="_blank">
+          Wiki Casiopea ↗
+        </a>
 
       </div>
 
@@ -240,13 +270,18 @@
 
   <footer>
 
-    <span>● 2026 Sofía Gomara</span>
+    <span>
+      ● 2026 Sofía Gomara
+    </span>
 
     <a href="index.html">
-      Volver arriba ↑
+      Inicio ↑
     </a>
 
   </footer>
+
+
+  <script src="script.js?v=100"></script>
 
 </body>
 
