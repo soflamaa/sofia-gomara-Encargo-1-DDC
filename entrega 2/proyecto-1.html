@@ -7,100 +7,146 @@
 
   <title>Proyecto 1 · Sofía Gomara</title>
 
-  <link rel="stylesheet" href="style.css?v=100">
+  <link rel="stylesheet" href="style.css?v=200">
 </head>
 
 <body>
 
-  <header class="topbar">
+  <div id="grain"></div>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
 
-    <a href="index.html" class="logo">SG</a>
 
-    <button class="menu-toggle" id="menuToggle">
-      MENÚ ☰
+  <header>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Abrir menú"
+      aria-expanded="false">
+
+      MENÚ
+
+      <span class="bars">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+
     </button>
-
-    <nav class="menu-panel" id="menuPanel">
-      <a href="index.html">Inicio</a>
-      <a href="proyecto-1.html">Proyecto 1</a>
-      <a href="proyecto-2.html">Proyecto 2</a>
-      <a href="proyecto-3.html">Proyecto 3</a>
-      <a href="proyecto-4.html">Proyecto 4</a>
-    </nav>
 
   </header>
 
 
-  <main class="pagina-proyecto">
+  <div id="overlay">
 
-    <p class="etiqueta">
-      01 — PROYECTO
+    <nav>
+
+      <a class="nav-link" href="index.html">
+        <span>01</span> Inicio
+      </a>
+
+      <a class="nav-link" href="proyecto-1.html">
+        <span>02</span> Proyecto 1
+      </a>
+
+      <a class="nav-link" href="proyecto-2.html">
+        <span>03</span> Proyecto 2
+      </a>
+
+      <a class="nav-link" href="proyecto-3.html">
+        <span>04</span> Proyecto 3
+      </a>
+
+      <a class="nav-link" href="proyecto-4.html">
+        <span>05</span> Proyecto 4
+      </a>
+
+    </nav>
+
+    <p class="overlay-foot">
+      Sofía Gomara — Diseño desde el Código
     </p>
 
-    <h1 class="titulo-proyecto">
-      Júpiter<br>
-      cooperativo
-    </h1>
+  </div>
 
 
-    <div class="proyecto-detalle">
+  <main class="project-page">
 
-      <div class="proyecto-info">
+    <div class="project-shell">
 
-        <h2>
-          Movimiento y composición
-        </h2>
+      <p class="project-number">
+        01 — Proyecto
+      </p>
 
-        <p>
-          Esta composición nace a partir de la relación entre el movimiento de
-          las ondas del mar y la forma en que las medusas se entrelazan entre
-          ellas.
-        </p>
+      <h1 class="project-title">
+        Júpiter<br>
+        cooperativo
+      </h1>
 
-        <p>
-          La mezcla entre formas orgánicas, movimiento y fondo negro permite
-          concentrar la mirada en esta especie de danza visual generada a
-          través del código.
-        </p>
 
-        <a
-          href="https://editor.p5js.org/soflamaa/sketches/awr6er-CM"
-          target="_blank"
-          class="boton">
-          Abrir en p5.js ↗
+      <div class="project-layout" data-reveal="up">
+
+        <div class="project-copy">
+
+          <h2>
+            Movimiento y composición
+          </h2>
+
+          <p>
+            Esta composición nace a partir de la relación entre el movimiento
+            de las ondas del mar y la forma en que las medusas se entrelazan
+            entre ellas.
+          </p>
+
+          <p>
+            La mezcla entre formas orgánicas, movimiento y fondo negro permite
+            concentrar la mirada en esta especie de danza visual generada a
+            través del código.
+          </p>
+
+          <a
+            class="btn-link"
+            href="https://editor.p5js.org/soflamaa/sketches/awr6er-CM"
+            target="_blank">
+
+            Ver en p5.js ↗
+
+          </a>
+
+        </div>
+
+
+        <div class="project-sketch">
+
+          <iframe
+            src="https://editor.p5js.org/soflamaa/full/awr6er-CM"
+            title="Júpiter cooperativo">
+          </iframe>
+
+        </div>
+
+      </div>
+
+
+      <div class="project-navigation">
+
+        <a href="index.html">
+          ← Volver al inicio
+        </a>
+
+        <a href="proyecto-2.html">
+          Proyecto 2 →
         </a>
 
       </div>
-
-
-      <div class="sketch">
-
-        <iframe
-          src="https://editor.p5js.org/soflamaa/full/awr6er-CM"
-          title="Júpiter cooperativo">
-        </iframe>
-
-      </div>
-
-    </div>
-
-
-    <div class="navegacion-proyecto">
-
-      <a href="index.html">
-        ← Volver a proyectos
-      </a>
-
-      <a href="proyecto-2.html">
-        Proyecto 2 →
-      </a>
 
     </div>
 
   </main>
 
 
-  <script src="script.js?v=100"></script>
+  <script src="script.js?v=200"></script>
 
 </body>
 
