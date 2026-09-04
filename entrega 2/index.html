@@ -1,139 +1,253 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sofía Gomara</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sofía Gomara · Versión 2</title>
+
+  <link rel="stylesheet" href="style.css?v=50">
 </head>
+
 <body>
 
-<div id="grain"></div>
-<div id="cursor-dot"></div>
-<div id="cursor-ring"></div>
+  <header class="topbar">
 
-<header>
-  <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="overlay">
-    Menú
-    <span class="bars"><span></span><span></span><span></span></span>
-  </button>
-</header>
+    <a class="logo" href="index.html">SG</a>
 
-<div id="overlay">
-  <nav>
-    <a href="#intereses" class="nav-link"><span>01</span>Intereses</a>
-    <a href="#proyectos" class="nav-link"><span>02</span>Proyectos</a>
-    <a href="#tareas" class="nav-link"><span>03</span>Tareas</a>
-  </nav>
-  <div class="overlay-foot">Sofía Gomara — Valparaíso, Chile</div>
-</div>
+    <details class="menu">
+      <summary>MENÚ ☰</summary>
 
-<main>
-  <section id="inicio">
-    <div class="blob"></div>
-    <div class="hero-name-wrap">
-      <h1 class="hero-name" id="heroName"></h1>
-    </div>
-    <p class="eyebrow">Diseñadora</p>
-    <p class="hero-sub">Estudiante de Diseño de tercer año en la Pontificia Universidad Católica de Valparaíso. Este espacio reúne mis intereses, los proyectos en los que he trabajado y las tareas que tengo en curso.</p>
-    <div class="hero-actions">
-      <a class="btn-link" id="magneticBtn" href="https://wiki.ead.pucv.cl/Sofia_gomara" target="_blank" rel="noopener">
-        Wiki Casipea
-        <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-    </div>
-  </section>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#intereses">Intereses</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="proyecto-1.html">Proyecto 1</a>
+        <a href="proyecto-2.html">Proyecto 2</a>
+        <a href="proyecto-3.html">Proyecto 3</a>
+        <a href="proyecto-4.html">Proyecto 4</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </details>
 
-  <section class="block" id="intereses">
-    <div class="block-head">
-      <h2>Intereses</h2>
-      <span class="index">01 — Perfil</span>
-    </div>
-    <div class="about-grid">
-      <div data-reveal="left">
-        <p>Mis áreas de interés son el diseño de interacción, la ilustración, las manualidades y la música. En diseño de interacción me enfoco en construir experiencias digitales claras y funcionales. La ilustración y las manualidades son herramientas que utilizo para explorar ideas de forma visual y manual, y la música es una fuente constante de inspiración en mi proceso creativo.</p>
+  </header>
+
+
+  <main>
+
+    <!-- PORTADA -->
+
+    <section class="hero">
+
+      <div class="hero-texto">
+
+        <p class="etiqueta">● DISEÑADORA</p>
+
+        <h1>
+          Sofía<br>
+          Gomara
+        </h1>
+
+        <p class="presentacion">
+          Estudiante de tercer año de Diseño en la Pontificia Universidad
+          Católica de Valparaíso. Este espacio reúne algunos de mis intereses
+          y proyectos desarrollados a partir de la experimentación con código.
+        </p>
+
+        <a class="boton" href="#proyectos">
+          Ver proyectos ↓
+        </a>
+
       </div>
-      <div class="stat-list" data-reveal="right">
+
+      <div class="forma"></div>
+
+    </section>
+
+
+    <!-- INTERESES -->
+
+    <section class="seccion" id="intereses">
+
+      <div class="titulo-seccion">
+        <h2>Intereses</h2>
+        <span>01 — Personal</span>
       </div>
-    </div>
-  </section>
 
-  <section class="block" id="proyectos">
-    <div class="block-head">
-      <h2>Proyectos</h2>
-      <span class="index">02 — Selección</span>
-    </div>
-    <div class="work-grid">
-      <a class="work-card" data-reveal="up" href="proyecto-1.html">
-        <span class="wc-index">Proyecto 01</span>
-        <h3>Júpiter cooperativo</h3>
-        <p>Esta composición es un juego entre el movimiento de las ondas del
-mar y como las medusas se entrelazan entre estas generando un
-vaivén.
-Ya con esto se genero esta mezcla la cual refleja esta fusión entre
-flora y fauna generando una armonía visual, la cual al tener un fondo
-negro permite al espectador enfocarse únicamente en esta danza.
-</p>
-        <div class="wc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="#1E1533" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </a>
-      <a class="work-card" data-reveal="up" href="proyecto-2.html">
-        <span class="wc-index">Proyecto 02</span>
-        <h3>Rectángulo rotante y contrastante</h3>
-        <p>Composición contrastante y movimientos hacia los lados.</p>
-        <div class="wc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="#1E1533" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </a>
-      <a class="work-card" data-reveal="up" href="proyecto-3.html">
-        <span class="wc-index">Proyecto 03</span>
-        <h3>Tiempo modesto</h3>
-        <p>Composición con forma de flor abstracta e interactiva.</p>
-        <div class="wc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="#1E1533" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </a>
-      <a class="work-card" data-reveal="up" href="proyecto-4.html">
-        <span class="wc-index">Proyecto 04</span>
-        <h3>Pateador dinámico</h3>
-        <p>Composición de particulas 3D.</p>
-        <div class="wc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="#1E1533" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </a>
-    </div>
-  </section>
+      <div class="intereses-grid">
 
-  <section class="block" id="tareas">
-    <div class="block-head">
-      <h2>Tareas</h2>
-      <span class="index">03 — En curso</span>
-    </div>
-    <div class="stat-list" data-reveal="left" style="max-width:640px;">
-      <a class="stat" href="https://codepen.io/editor/pen?tour=welcome" target="_blank" rel="noopener"><span class="num">01</span><span class="label">Página web codepen — Diseño desde el código</span></a>
-      <a class="stat" href="https://tu-link-tarea-2.com" target="_blank" rel="noopener"><span class="num">02</span><span class="label">Nombre de la tarea — Diseño desde el código</span></a>
-      <a class="stat" href="https://tu-link-tarea-3.com" target="_blank" rel="noopener"><span class="num">03</span><span class="label">Nombre de la tarea — Diseño desde el código</span></a>
-    </div>
-  </section>
+        <article>
+          <span>01</span>
 
-  <section class="block" id="contacto">
-    <div class="block-head">
-      <h2>Contacto</h2>
-      <span class="index">04 — Hablemos</span>
-    </div>
-    <div class="contact-inner" data-reveal="up">
-    sofia.gomara.c@mail.pucv.cl
-      <a class="big-link" href="https://www.instagram.com/soflamaa/" target="_blank" rel="noopener">@soflamaa</a>
-    </div>
-  </section>
-</main>
+          <h3>Diseño visual</h3>
 
-<footer>
-  <span>© 2026 Sofía Gomara</span>
-  <div class="footer-links">
-    <a href="#inicio">Inicio</a>
-    <a href="mailto:sofia.gomara@email.com">Email</a>
-    <a href="https://www.instagram.com/soflamaa/" target="_blank" rel="noopener">instagram</a>
-  </div>
-</footer>
+          <p>
+            Me interesa experimentar con composición, color, tipografía
+            y diferentes formas de construir una identidad visual.
+          </p>
+        </article>
 
-<script src="script.js"></script>
+
+        <article>
+          <span>02</span>
+
+          <h3>Interacción</h3>
+
+          <p>
+            Me interesa observar cómo las personas se relacionan con una
+            interfaz y cómo sus acciones pueden modificar una experiencia.
+          </p>
+        </article>
+
+
+        <article>
+          <span>03</span>
+
+          <h3>Código creativo</h3>
+
+          <p>
+            Utilizar el código como una herramienta para generar movimiento,
+            repetición, variación y nuevos comportamientos visuales.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROYECTOS -->
+
+    <section class="seccion" id="proyectos">
+
+      <div class="titulo-seccion">
+        <h2>Proyectos</h2>
+        <span>02 — Selección</span>
+      </div>
+
+      <p class="introduccion-seccion">
+        Selección de cuatro ejercicios realizados en p5.js. Cada proyecto
+        cuenta con una página propia, una breve descripción y un acceso al
+        sketch original.
+      </p>
+
+
+      <div class="proyectos-grid">
+
+        <a href="proyecto-1.html" class="proyecto-card">
+
+          <span class="proyecto-numero">01</span>
+
+          <div>
+            <h3>Proyecto 1</h3>
+
+            <p>
+              Primera exploración desarrollada mediante programación creativa.
+            </p>
+          </div>
+
+          <strong>Ver proyecto ↗️</strong>
+
+        </a>
+
+
+        <a href="proyecto-2.html" class="proyecto-card">
+
+          <span class="proyecto-numero">02</span>
+
+          <div>
+            <h3>Proyecto 2</h3>
+
+            <p>
+              Experimentación gráfica a partir de relaciones entre forma y código.
+            </p>
+          </div>
+
+          <strong>Ver proyecto ↗️</strong>
+
+        </a>
+
+
+        <a href="proyecto-3.html" class="proyecto-card">
+
+          <span class="proyecto-numero">03</span>
+
+          <div>
+            <h3>Proyecto 3</h3>
+
+            <p>
+              Exploración de movimiento, composición y transformación visual.
+            </p>
+          </div>
+
+          <strong>Ver proyecto ↗️</strong>
+
+        </a>
+
+
+        <a href="proyecto-4.html" class="proyecto-card">
+
+          <span class="proyecto-numero">04</span>
+
+          <div>
+            <h3>Proyecto 4</h3>
+
+            <p>
+              Ejercicio que incorpora interacción y comportamiento mediante p5.js.
+            </p>
+          </div>
+
+          <strong>Ver proyecto ↗️</strong>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+
+    <section class="seccion contacto" id="contacto">
+
+      <div class="titulo-seccion">
+        <h2>Contacto</h2>
+        <span>03 — Hablemos</span>
+      </div>
+
+      <div class="contacto-contenido">
+
+        <p>
+          Para conocer más sobre mi proceso y trabajos desarrollados durante
+          la carrera puedes visitar mi Wiki Casiopea.
+        </p>
+
+        <div class="contacto-links">
+
+          <a href="https://wiki.ead.pucv.cl/" target="_blank">
+            Wiki Casiopea ↗️
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <span>● 2026 Sofía Gomara</span>
+
+    <a href="index.html">
+      Volver arriba ↑
+    </a>
+
+  </footer>
 
 </body>
+
 </html>
