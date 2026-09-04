@@ -7,99 +7,145 @@
 
   <title>Proyecto 3 · Sofía Gomara</title>
 
-  <link rel="stylesheet" href="style.css?v=100">
+  <link rel="stylesheet" href="style.css?v=200">
 </head>
 
 <body>
 
-  <header class="topbar">
+  <div id="grain"></div>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
 
-    <a href="index.html" class="logo">SG</a>
 
-    <button class="menu-toggle" id="menuToggle">
-      MENÚ ☰
+  <header>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Abrir menú"
+      aria-expanded="false">
+
+      MENÚ
+
+      <span class="bars">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+
     </button>
-
-    <nav class="menu-panel" id="menuPanel">
-      <a href="index.html">Inicio</a>
-      <a href="proyecto-1.html">Proyecto 1</a>
-      <a href="proyecto-2.html">Proyecto 2</a>
-      <a href="proyecto-3.html">Proyecto 3</a>
-      <a href="proyecto-4.html">Proyecto 4</a>
-    </nav>
 
   </header>
 
 
-  <main class="pagina-proyecto">
+  <div id="overlay">
 
-    <p class="etiqueta">
-      03 — PROYECTO
+    <nav>
+
+      <a class="nav-link" href="index.html">
+        <span>01</span> Inicio
+      </a>
+
+      <a class="nav-link" href="proyecto-1.html">
+        <span>02</span> Proyecto 1
+      </a>
+
+      <a class="nav-link" href="proyecto-2.html">
+        <span>03</span> Proyecto 2
+      </a>
+
+      <a class="nav-link" href="proyecto-3.html">
+        <span>04</span> Proyecto 3
+      </a>
+
+      <a class="nav-link" href="proyecto-4.html">
+        <span>05</span> Proyecto 4
+      </a>
+
+    </nav>
+
+    <p class="overlay-foot">
+      Sofía Gomara — Diseño desde el Código
     </p>
 
-    <h1 class="titulo-proyecto">
-      Proyecto 03
-    </h1>
+  </div>
 
 
-    <div class="proyecto-detalle">
+  <main class="project-page">
 
-      <div class="proyecto-info">
+    <div class="project-shell">
 
-        <h2>
-          Movimiento y repetición
-        </h2>
+      <p class="project-number">
+        03 — Proyecto
+      </p>
 
-        <p>
-          En este proyecto se trabaja con la repetición y transformación de
-          elementos para construir una composición que cambia a través del
-          tiempo.
-        </p>
+      <h1 class="project-title">
+        Proyecto 03
+      </h1>
 
-        <p>
-          El movimiento pasa a ser parte importante del resultado, permitiendo
-          que la pieza se comprenda como una experiencia digital y no solamente
-          como una imagen fija.
-        </p>
 
-        <a
-          href="https://editor.p5js.org/soflamaa/sketches/q_n6FzLzO"
-          target="_blank"
-          class="boton">
-          Abrir en p5.js ↗
+      <div class="project-layout" data-reveal="up">
+
+        <div class="project-copy">
+
+          <h2>
+            Movimiento y repetición
+          </h2>
+
+          <p>
+            En este proyecto se trabaja con la repetición y transformación de
+            elementos para construir una composición que cambia a través del
+            tiempo.
+          </p>
+
+          <p>
+            El movimiento pasa a ser parte importante del resultado,
+            permitiendo que la pieza se comprenda como una experiencia digital
+            y no solamente como una imagen fija.
+          </p>
+
+          <a
+            class="btn-link"
+            href="https://editor.p5js.org/soflamaa/sketches/q_n6FzLzO"
+            target="_blank">
+
+            Ver en p5.js ↗
+
+          </a>
+
+        </div>
+
+
+        <div class="project-sketch">
+
+          <iframe
+            src="https://editor.p5js.org/soflamaa/full/q_n6FzLzO"
+            title="Proyecto 3">
+          </iframe>
+
+        </div>
+
+      </div>
+
+
+      <div class="project-navigation">
+
+        <a href="proyecto-2.html">
+          ← Proyecto 2
+        </a>
+
+        <a href="proyecto-4.html">
+          Proyecto 4 →
         </a>
 
       </div>
-
-
-      <div class="sketch">
-
-        <iframe
-          src="https://editor.p5js.org/soflamaa/full/q_n6FzLzO"
-          title="Proyecto 3">
-        </iframe>
-
-      </div>
-
-    </div>
-
-
-    <div class="navegacion-proyecto">
-
-      <a href="proyecto-2.html">
-        ← Proyecto 2
-      </a>
-
-      <a href="proyecto-4.html">
-        Proyecto 4 →
-      </a>
 
     </div>
 
   </main>
 
 
-  <script src="script.js?v=100"></script>
+  <script src="script.js?v=200"></script>
 
 </body>
 
