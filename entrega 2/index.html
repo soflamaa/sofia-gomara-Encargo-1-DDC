@@ -7,259 +7,405 @@
 
   <title>Sofía Gomara · Versión 2</title>
 
-  <link rel="stylesheet" href="style.css?v=100">
+  <link rel="stylesheet" href="style.css?v=200">
 </head>
 
 <body>
 
+  <!-- TEXTURA + CURSOR -->
+
+  <div id="grain"></div>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+
   <!-- HEADER -->
 
-  <header class="topbar">
+  <header>
 
-    <a href="index.html" class="logo">SG</a>
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Abrir menú"
+      aria-expanded="false">
 
-    <button class="menu-toggle" id="menuToggle">
-      MENÚ ☰
+      MENÚ
+
+      <span class="bars">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+
     </button>
-
-    <nav class="menu-panel" id="menuPanel">
-
-      <a href="index.html">Inicio</a>
-      <a href="#intereses">Intereses</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="proyecto-1.html">Proyecto 1</a>
-      <a href="proyecto-2.html">Proyecto 2</a>
-      <a href="proyecto-3.html">Proyecto 3</a>
-      <a href="proyecto-4.html">Proyecto 4</a>
-      <a href="#contacto">Contacto</a>
-
-    </nav>
 
   </header>
 
 
+  <!-- MENÚ PANTALLA COMPLETA -->
+
+  <div id="overlay">
+
+    <nav>
+
+      <a class="nav-link" href="#inicio">
+        <span>01</span> Inicio
+      </a>
+
+      <a class="nav-link" href="#intereses">
+        <span>02</span> Intereses
+      </a>
+
+      <a class="nav-link" href="#proyectos">
+        <span>03</span> Proyectos
+      </a>
+
+      <a class="nav-link" href="#contacto">
+        <span>04</span> Contacto
+      </a>
+
+    </nav>
+
+    <p class="overlay-foot">
+      Sofía Gomara — Valparaíso, Chile
+    </p>
+
+  </div>
+
+
   <main>
 
-    <!-- PORTADA -->
+    <!-- HERO -->
 
-    <section class="hero">
+    <section id="inicio">
 
-      <div class="hero-texto">
+      <div class="blob"></div>
 
-        <p class="etiqueta">
-          ● DISEÑADORA
-        </p>
+      <p class="eyebrow">
+        Diseñadora
+      </p>
 
-        <h1>
-          Sofía<br>
-          Gomara
+      <div class="hero-name-wrap">
+
+        <h1
+          class="hero-name"
+          id="heroName">
         </h1>
 
-        <p class="presentacion">
-          Estudiante de tercer año de Diseño en la Pontificia Universidad
-          Católica de Valparaíso. Este espacio reúne algunos de mis intereses
-          y proyectos desarrollados a partir de la experimentación con código.
-        </p>
+      </div>
 
-        <a href="#proyectos" class="boton">
-          Ver proyectos ↓
+      <p class="hero-sub">
+        Estudiante de tercer año de Diseño en la Pontificia Universidad
+        Católica de Valparaíso. Este espacio reúne algunos de mis intereses
+        y proyectos desarrollados a partir de la experimentación con código,
+        movimiento e interacción.
+      </p>
+
+      <div class="hero-actions">
+
+        <a
+          href="#proyectos"
+          class="btn-link"
+          id="magneticBtn">
+
+          Ver proyectos
+
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M7 17L17 7M17 7H8M17 7V16"
+              stroke="currentColor"
+              stroke-width="2"/>
+          </svg>
+
         </a>
 
       </div>
 
-
-      <div class="forma-morada"></div>
+      <div class="scroll-cue">
+        <span class="dash"></span>
+        Scroll
+      </div>
 
     </section>
 
 
+
+    <!-- MARQUEE -->
+
+    <div class="marquee-wrap">
+
+      <div class="marquee-track">
+
+        <span>DISEÑO</span>
+        <span>INTERACCIÓN</span>
+        <span>CÓDIGO CREATIVO</span>
+        <span>MOVIMIENTO</span>
+
+        <span>DISEÑO</span>
+        <span>INTERACCIÓN</span>
+        <span>CÓDIGO CREATIVO</span>
+        <span>MOVIMIENTO</span>
+
+      </div>
+
+    </div>
+
+
+
     <!-- INTERESES -->
 
-    <section class="seccion" id="intereses">
+    <section
+      class="block"
+      id="intereses"
+      data-reveal="up">
 
-      <div class="titulo-seccion">
+      <div class="block-head">
 
         <h2>Intereses</h2>
 
-        <span>
+        <span class="index">
           01 — Personal
         </span>
 
       </div>
 
 
-      <div class="intereses-grid">
+      <div class="about-grid">
 
-        <article>
-
-          <span>01</span>
-
-          <h3>Diseño visual</h3>
+        <div>
 
           <p>
-            Me interesa experimentar con composición, color, tipografía y
-            distintas formas de construir una identidad visual.
+            Me interesa el diseño como una herramienta para construir
+            experiencias visuales y explorar distintas maneras de comunicar
+            mediante la forma, el color y la composición.
           </p>
-
-        </article>
-
-
-        <article>
-
-          <span>02</span>
-
-          <h3>Interacción</h3>
 
           <p>
-            Me interesa observar cómo las personas se relacionan con una
-            interfaz y cómo sus acciones pueden modificar una experiencia.
+            También me interesa experimentar con código, interacción y
+            movimiento, entendiendo la pantalla como un espacio que puede
+            transformarse y responder a las acciones del usuario.
           </p>
 
-        </article>
+        </div>
 
 
-        <article>
+        <div class="stat-list">
 
-          <span>03</span>
+          <div class="stat">
+            <span class="num">01</span>
+            <span class="label">
+              Diseño visual y composición
+            </span>
+          </div>
 
-          <h3>Código creativo</h3>
+          <div class="stat">
+            <span class="num">02</span>
+            <span class="label">
+              Interacción y experiencia
+            </span>
+          </div>
 
-          <p>
-            Utilizo el código como una herramienta para generar movimiento,
-            repetición, variación y nuevos comportamientos visuales.
-          </p>
+          <div class="stat">
+            <span class="num">03</span>
+            <span class="label">
+              Código creativo y movimiento
+            </span>
+          </div>
 
-        </article>
+        </div>
 
       </div>
 
     </section>
 
 
+
     <!-- PROYECTOS -->
 
-    <section class="seccion" id="proyectos">
+    <section
+      class="block"
+      id="proyectos"
+      data-reveal="left">
 
-      <div class="titulo-seccion">
+      <div class="block-head">
 
         <h2>Proyectos</h2>
 
-        <span>
+        <span class="index">
           02 — Selección
         </span>
 
       </div>
 
 
-      <p class="introduccion">
-        Selección de cuatro ejercicios desarrollados en p5.js. Cada uno cuenta
-        con una página propia donde se puede conocer brevemente la propuesta y
-        acceder al sketch original.
-      </p>
+      <div class="work-grid">
 
 
-      <div class="proyectos-grid">
+        <a
+          href="proyecto-1.html"
+          class="work-card">
 
-        <a href="proyecto-1.html" class="proyecto-card">
+          <span class="wc-index">
+            01
+          </span>
 
-          <span>01</span>
+          <h3>
+            Júpiter cooperativo
+          </h3>
 
-          <div>
-            <h3>Júpiter cooperativo</h3>
+          <p>
+            Exploración visual inspirada en el movimiento de las ondas
+            y la relación entre formas orgánicas.
+          </p>
 
-            <p>
-              Exploración visual que relaciona movimiento, ondas y formas
-              orgánicas.
-            </p>
-          </div>
+          <span class="wc-arrow">
 
-          <strong>Ver proyecto ↗</strong>
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M7 17L17 7M17 7H8M17 7V16"
+                stroke="#1E1533"
+                stroke-width="2"/>
+            </svg>
 
-        </a>
-
-
-        <a href="proyecto-2.html" class="proyecto-card">
-
-          <span>02</span>
-
-          <div>
-            <h3>Proyecto 02</h3>
-
-            <p>
-              Experimentación gráfica realizada mediante programación creativa.
-            </p>
-          </div>
-
-          <strong>Ver proyecto ↗</strong>
+          </span>
 
         </a>
 
 
-        <a href="proyecto-3.html" class="proyecto-card">
 
-          <span>03</span>
+        <a
+          href="proyecto-2.html"
+          class="work-card">
 
-          <div>
-            <h3>Proyecto 03</h3>
+          <span class="wc-index">
+            02
+          </span>
 
-            <p>
-              Exploración de movimiento, repetición y composición digital.
-            </p>
-          </div>
+          <h3>
+            Proyecto 02
+          </h3>
 
-          <strong>Ver proyecto ↗</strong>
+          <p>
+            Experimentación gráfica desarrollada mediante programación
+            creativa en p5.js.
+          </p>
+
+          <span class="wc-arrow">
+
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M7 17L17 7M17 7H8M17 7V16"
+                stroke="#1E1533"
+                stroke-width="2"/>
+            </svg>
+
+          </span>
+
+        </a>
+
+
+
+        <a
+          href="proyecto-3.html"
+          class="work-card">
+
+          <span class="wc-index">
+            03
+          </span>
+
+          <h3>
+            Proyecto 03
+          </h3>
+
+          <p>
+            Exploración de movimiento, repetición y transformación
+            dentro de una composición digital.
+          </p>
+
+          <span class="wc-arrow">
+
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M7 17L17 7M17 7H8M17 7V16"
+                stroke="#1E1533"
+                stroke-width="2"/>
+            </svg>
+
+          </span>
 
         </a>
 
 
-        <a href="proyecto-4.html" class="proyecto-card">
 
-          <span>04</span>
+        <a
+          href="proyecto-4.html"
+          class="work-card">
 
-          <div>
-            <h3>Proyecto 04</h3>
+          <span class="wc-index">
+            04
+          </span>
 
-            <p>
-              Ejercicio interactivo desarrollado mediante p5.js.
-            </p>
-          </div>
+          <h3>
+            Proyecto 04
+          </h3>
 
-          <strong>Ver proyecto ↗</strong>
+          <p>
+            Ejercicio que relaciona comportamiento, movimiento
+            e interacción a través del código.
+          </p>
+
+          <span class="wc-arrow">
+
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M7 17L17 7M17 7H8M17 7V16"
+                stroke="#1E1533"
+                stroke-width="2"/>
+            </svg>
+
+          </span>
 
         </a>
+
 
       </div>
 
     </section>
 
 
+
     <!-- CONTACTO -->
 
-    <section class="seccion contacto" id="contacto">
+    <section
+      class="block"
+      id="contacto"
+      data-reveal="right">
 
-      <div class="titulo-seccion">
+      <div class="block-head">
 
         <h2>Contacto</h2>
 
-        <span>
+        <span class="index">
           03 — Hablemos
         </span>
 
       </div>
 
 
-      <div class="contacto-contenido">
-
-        <p>
-          Para conocer más sobre mi proceso y otros trabajos desarrollados
-          durante la carrera puedes visitar mi Wiki Casiopea.
-        </p>
+      <div class="contact-inner">
 
         <a
+          class="big-link"
           href="https://wiki.ead.pucv.cl/"
           target="_blank">
+
           Wiki Casiopea ↗
+
         </a>
+
+        <p>
+          Diseño desde el Código · 2026
+        </p>
 
       </div>
 
@@ -268,20 +414,29 @@
   </main>
 
 
+
   <footer>
 
     <span>
-      ● 2026 Sofía Gomara
+      © 2026 Sofía Gomara
     </span>
 
-    <a href="index.html">
-      Inicio ↑
-    </a>
+    <div class="footer-links">
+
+      <a href="#inicio">
+        Inicio
+      </a>
+
+      <a href="#proyectos">
+        Proyectos
+      </a>
+
+    </div>
 
   </footer>
 
 
-  <script src="script.js?v=100"></script>
+  <script src="script.js?v=200"></script>
 
 </body>
 
