@@ -1,87 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tiempo modesto — Sofía Gomara</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Proyecto 3 · Sofía Gomara</title>
+
+  <link rel="stylesheet" href="style.css?v=100">
 </head>
+
 <body>
 
-<div id="grain"></div>
-<div id="cursor-dot"></div>
-<div id="cursor-ring"></div>
+  <header class="topbar">
 
-<header>
-  <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="overlay">
-    Menú
-    <span class="bars"><span></span><span></span><span></span></span>
-  </button>
-</header>
+    <a href="index.html" class="logo">SG</a>
 
-<div id="overlay">
-  <nav>
-    <a href="index.html#intereses" class="nav-link"><span>01</span>Intereses</a>
-    <a href="index.html#proyectos" class="nav-link"><span>02</span>Proyectos</a>
-    <a href="index.html#tareas" class="nav-link"><span>03</span>Tareas</a>
-  </nav>
-  <div class="overlay-foot">Sofía Gomara — Valparaíso, Chile</div>
-</div>
+    <button class="menu-toggle" id="menuToggle">
+      MENÚ ☰
+    </button>
 
-<main>
-  <section class="project-hero">
-    <a class="back-link" href="index.html#proyectos">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      Volver a proyectos
-    </a>
-    <p class="eyebrow">Proyecto 03</p>
-    <div class="hero-name-wrap">
-      <h1 class="hero-name hero-name--project" id="heroName">Tiempo modesto</h1>
+    <nav class="menu-panel" id="menuPanel">
+      <a href="index.html">Inicio</a>
+      <a href="proyecto-1.html">Proyecto 1</a>
+      <a href="proyecto-2.html">Proyecto 2</a>
+      <a href="proyecto-3.html">Proyecto 3</a>
+      <a href="proyecto-4.html">Proyecto 4</a>
+    </nav>
+
+  </header>
+
+
+  <main class="pagina-proyecto">
+
+    <p class="etiqueta">
+      03 — PROYECTO
+    </p>
+
+    <h1 class="titulo-proyecto">
+      Proyecto 03
+    </h1>
+
+
+    <div class="proyecto-detalle">
+
+      <div class="proyecto-info">
+
+        <h2>
+          Movimiento y repetición
+        </h2>
+
+        <p>
+          En este proyecto se trabaja con la repetición y transformación de
+          elementos para construir una composición que cambia a través del
+          tiempo.
+        </p>
+
+        <p>
+          El movimiento pasa a ser parte importante del resultado, permitiendo
+          que la pieza se comprenda como una experiencia digital y no solamente
+          como una imagen fija.
+        </p>
+
+        <a
+          href="https://editor.p5js.org/soflamaa/sketches/q_n6FzLzO"
+          target="_blank"
+          class="boton">
+          Abrir en p5.js ↗
+        </a>
+
+      </div>
+
+
+      <div class="sketch">
+
+        <iframe
+          src="https://editor.p5js.org/soflamaa/full/q_n6FzLzO"
+          title="Proyecto 3">
+        </iframe>
+
+      </div>
+
     </div>
-    <p class="hero-sub">Composición con forma de flor abstracta e interactiva.</p>
-    <div class="hero-actions">
-      <a class="btn-link" href="https://editor.p5js.org/soflamaa/sketches/2BgbhHcT5" target="_blank" rel="noopener">
-        Abrir en el editor p5.js
-        <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+
+    <div class="navegacion-proyecto">
+
+      <a href="proyecto-2.html">
+        ← Proyecto 2
       </a>
+
+      <a href="proyecto-4.html">
+        Proyecto 4 →
+      </a>
+
     </div>
-    <div class="project-meta">
-      <div><strong>Técnica</strong>p5.js — Composición interactiva</div>
-      <div><strong>Herramienta</strong>p5.js editor</div>
-    </div>
-  </section>
 
-  <div class="sketch-embed">
-    <div class="sketch-frame">
-      <iframe src="https://editor.p5js.org/soflamaa/full/2BgbhHcT5" title="Sketch: Tiempo modesto" loading="lazy" allow="fullscreen"></iframe>
-    </div>
-  </div>
+  </main>
 
-  <div class="project-nav">
-    <a class="prev" href="proyecto-2.html">
-      <span class="pn-label">Anterior</span>
-      <span class="pn-title">Rectángulo rotante y contrastante</span>
-    </a>
-    <a class="next" href="proyecto-4.html">
-      <span class="pn-label">Siguiente</span>
-      <span class="pn-title">Pateador dinámico</span>
-    </a>
-  </div>
-</main>
 
-<footer>
-  <span>© 2026 Sofía Gomara</span>
-  <div class="footer-links">
-    <a href="index.html#inicio">Inicio</a>
-    <a href="mailto:sofia.gomara@email.com">Email</a>
-    <a href="https://www.instagram.com/soflamaa/" target="_blank" rel="noopener">instagram</a>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js?v=100"></script>
 
 </body>
+
 </html>
