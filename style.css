@@ -1,6 +1,3 @@
-body {
-  background: pink !important;
-}
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap');
 
 * {
@@ -17,7 +14,6 @@ body {
     #f4eff8;
 
   color: #281b33;
-
   font-family: "DM Sans", sans-serif;
 }
 
@@ -27,7 +23,6 @@ body {
 .portada {
   width: min(1100px, 88%);
   min-height: 88vh;
-
   margin: 0 auto;
 
   display: flex;
@@ -60,7 +55,6 @@ h1 {
 
 .bajada {
   max-width: 600px;
-
   margin: 32px 0 65px;
 
   font-size: 17px;
@@ -70,18 +64,16 @@ h1 {
 }
 
 
-/* VERSIONES */
+/* ENTREGAS */
 
 .versiones {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-
+  grid-template-columns: repeat(2, 1fr);
   gap: 22px;
 }
 
 .tarjeta {
   min-height: 260px;
-
   padding: 28px;
 
   display: flex;
@@ -94,7 +86,6 @@ h1 {
   background: rgba(255, 255, 255, 0.55);
 
   border: 1px solid rgba(75, 36, 105, 0.25);
-
   border-radius: 18px;
 
   transition:
@@ -131,7 +122,6 @@ h1 {
 
 .tarjeta p {
   max-width: 360px;
-
   margin: 0;
 
   font-size: 14px;
@@ -153,9 +143,7 @@ h1 {
 
 footer {
   width: min(1100px, 88%);
-
   margin: 0 auto;
-
   padding: 28px 0;
 
   border-top: 1px solid rgba(75, 36, 105, 0.16);
